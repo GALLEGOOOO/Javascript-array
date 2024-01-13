@@ -8,12 +8,13 @@
 
 const NUMBERS = [1, 2, 3, 4, 5];
 
-export const sumNumbersFromInitialValue = function (initial) {
-  let sum = initial;
-
-  for (let index = 0; index < NUMBERS.length; index++) {
-    sum += NUMBERS[index];
+const sumNumbersFromInitialValue = function (numbers, inicial) {
+  let suma = inicial;
+  const collectionLength = numbers.length;
+  for (let index = 0; index < collectionLength; index++) {
+    suma += numbers[index];
   }
-
-  return sum;
+  return suma;
 };
+
+export default sumNumbersFromInitialValue;
