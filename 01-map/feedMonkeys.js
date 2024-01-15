@@ -13,5 +13,6 @@ export const feedMonkeys = function (fruit) {
     const currentMonkey = `${monkey} ${fruit}`;
     return currentMonkey;
   });
+
   return mappedMonkeys;
 };

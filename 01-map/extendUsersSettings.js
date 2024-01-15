@@ -56,9 +56,9 @@ const USERS = [
  */
 
 const extendUsersSettings = function (users) {
-  const userUpdate = users.map((element, index) => {
+  const userUpdate = users.map((user, index) => {
     return {
-      ...element,
+      ...user, //el operador ... copia les propietats d'un objecte existent i les copia en un objecte nou
       id: index,
       isEnabled: true,
     };

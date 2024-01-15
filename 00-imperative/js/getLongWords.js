@@ -9,12 +9,13 @@
 const LANGUAGES = ["Java", "C++", "JavaScript", "C#", "TypeScript"];
 const BEATLES = ["John", "George", "Paul", "Ringo"];
 
-export const getLongWords = function (LANGUAGES) {
+export const getLongWords = function (LongWords) {
   const longLanguages = [];
-  const collectionLenght = LANGUAGES.length;
+  const collectionLenght = LongWords.length;
 
   for (let index = 0; index < collectionLenght; index++) {
-    const Language = `${LANGUAGES[index]}`;
+    const Language = `${LongWords[index]}`;
+
     if (Language.length >= 5) {
       longLanguages.push(Language);
     }

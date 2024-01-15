@@ -1,4 +1,5 @@
 import sumNumbersFromInitialValue from "./sumNumbersFromInitialValue.js";
+
 describe("Given sumNumbersFromInitialValue", () => {
   test("when an array of numbers and an initialValue is given as an argument, the sum of the values in the array starting at the initialValue is returned ", () => {
     const NUMBERS = [1, 2, 3, 4, 5];
@@ -10,6 +11,7 @@ describe("Given sumNumbersFromInitialValue", () => {
     expect(sum).toBeDefined();
     expect(sum).toEqual(EXPECTED_RESULT);
   });
+
   test("when an array of numbers and an initialValue is given as an argument, the sum of the values in the array starting at the initialValue is returned ", () => {
     const NUMBERS = [1, 2, 3, 4, 5];
     const initialValue = 10;
