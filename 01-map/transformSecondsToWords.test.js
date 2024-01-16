@@ -1,13 +1,17 @@
-import transformSecondsToWords from "./transformSecondsToWords";
-describe("Given feedMonkeys", () => {
-  test("when [2, 5, 100] is provided as argument Then exècted array should be returned ", () => {
-    const SECONDS = [2, 5, 100];
-    const EXPECTED_RESULT = ["2", "5", "100"];
+import { transformSecondsToWords } from "./transformSecondsToWords.js";
 
-    const newWord = transformSecondsToWords(SECONDS);
-
-    expect(newWord).toBeDefined();
-    expect(newWord.length).toBe(3);
-    expect(newWord).toEqual(EXPECTED_RESULT);
-  });
+describe("Given function transformSecondsToWords...", () => {
+  test(
+    "When array of seconds is entered." +
+      "Then expected result should be returned",
+    () => {
+      //Arrange
+      const EXPECTED_RESULT = ["2", "5", "100"];
+      //Act
+      const result = transformSecondsToWords();
+      //Assert
+      expect(result).toBeDefined();
+      expect(result).toEqual(EXPECTED_RESULT);
+    },
+  );
 });

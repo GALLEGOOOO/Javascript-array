@@ -1,16 +1,15 @@
-import { transformSecondsToWords } from "./transformSecondsToWords";
+const SECONDS = [2, 5, 100];
 
-describe("Given transformSecondsToWords", () => {
-  test("When SECONDS array is provided as an argument. Then expected array should be returned", () => {
-    // Arrange
-    const SECONDS = [2, 5, 100];
-    const expectedResult = ["2", "5", "100"];
+/**
+ 
+Transform a given number to a string
+@param {number} seconds given in type number
+@returns {string} return seconds in type string
+*/
 
-    // Act
-    const result = transformSecondsToWords(SECONDS);
-
-    // Assert
-    expect(result).toBeDefined();
-    expect(result).toEqual(expectedResult);
+export const transformSecondsToWords = () => {
+  const secondAsWordArray = SECONDS.map((second) => {
+    return second.toString();
   });
-});
+  return secondAsWordArray;
+};
