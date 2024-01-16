@@ -27,11 +27,14 @@ const VIPS = [
   },
 ];
 
-const extractVipsNames = function (vips) {
-  const vipsNames = vips.map((vip) => {
+const extractVipsNames = function (vips) {// Definició de la funció 'extractVipsNames' que rep una llista d'objectes VIPS i retorna una llista amb noms de VIPS
+  const vipsNames = vips.map((vip) => {  // Utilitza el mètode 'map()' per recórrer cada objecte VIP i retorna només la propietat 'name'
+
     return vip.name;
   });
-  return vipsNames;
+  return vipsNames; // Retorna una nova llista amb els noms dels VIPS
 };
 
-export default extractVipsNames;
+export default extractVipsNames; // Exporta la funció 'extractVipsNames' com a funció predeterminada del mòdul
+
+//que rep una llista d'objectes VIPS i utilitza el mètode map() per crear una nova llista que conté només els noms dels VIPS.
