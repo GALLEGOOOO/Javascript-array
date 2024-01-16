@@ -27,8 +27,10 @@ const VIPS = [
   },
 ];
 
-const extractVipsNames = function (vips) {// Definició de la funció 'extractVipsNames' que rep una llista d'objectes VIPS i retorna una llista amb noms de VIPS
-  const vipsNames = vips.map((vip) => {  // Utilitza el mètode 'map()' per recórrer cada objecte VIP i retorna només la propietat 'name'
+const extractVipsNames = function (vips) {
+  // Definició de la funció 'extractVipsNames' que rep una llista d'objectes VIPS i retorna una llista amb noms de VIPS
+  const vipsNames = vips.map((vip) => {
+    // Utilitza el mètode 'map()' per recórrer cada objecte VIP i retorna només la propietat 'name'
 
     return vip.name;
   });
