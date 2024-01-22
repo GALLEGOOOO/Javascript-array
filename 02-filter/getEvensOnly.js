@@ -5,3 +5,9 @@
  */
 
 const COUNTERS = [2, 25, 43, 12, 67, 42, 28];
+
+const getEvensOnly = (counters) => {
+  return counters.filter((number) => number % 2 === 0);
+};
+
+export default getEvensOnly;
